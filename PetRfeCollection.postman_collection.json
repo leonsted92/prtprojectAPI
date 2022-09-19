@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "261baacd-b794-46e1-968f-ea1ebf48a6fa",
+		"name": "PetRfeCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9606086"
+	},
+	"item": [
+		{
+			"name": "GetListPets",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add new pet  to store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{nameUrl}}/pet",
+					"host": [
+						"{{nameUrl}}"
+					],
+					"path": [
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
