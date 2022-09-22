@@ -92,9 +92,39 @@
 		},
 		{
 			"name": "Get Inventory data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Status code is \", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{nameUrl}}/store/inventory",
+					"host": [
+						"{{nameUrl}}"
+					],
+					"path": [
+						"store",
+						"inventory"
+					]
+				}
 			},
 			"response": []
 		}
