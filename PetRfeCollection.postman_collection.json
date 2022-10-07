@@ -15,7 +15,7 @@
 						"exec": [
 							"\r",
 							"pm.test(\"Status code is \", function() {\r",
-							"    pm.response.to.have.status(500);\r",
+							"    pm.response.to.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -99,7 +99,7 @@
 						"exec": [
 							"\r",
 							"pm.test(\"Status code is \", function() {\r",
-							"    pm.response.to.have.status(500);\r",
+							"    pm.response.to.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
